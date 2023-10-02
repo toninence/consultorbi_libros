@@ -117,7 +117,8 @@ consulta_insert_error = f"INSERT INTO {nombre_tabla_errores} (titulo, error, fec
 
 # # Inserta los datos en la tabla
 for libro in libros:
-    libro['precio_pesos'] = str(libro['precio_pesos'])
+    # if(libro['titulo'] == "ESTE DOLOR NO ES MIO"):
+    #   libro['precio_pesos'] = str(libro['precio_pesos'])
     # print(libro)
     if not isinstance(libro['precio_pesos'], (int, float)) or not isinstance(libro['precio_usd'], (int, float)) or not isinstance(libro['precio_blue'], (int, float)):
       print("Error")
