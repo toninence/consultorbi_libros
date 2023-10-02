@@ -1,0 +1,2 @@
+Modificar de ser necesario usuario y contraseña en la configuracion de base de datos en las lineas 76 y 77.
+Luego correr el script y se creará la base de datos con sus respectivas tablas guardando los valores de los libros tomados de cúspide, si tienen algun error al formatear el precio se guardara en la tabla de errores y sino se guardaran en la tabla libros. 

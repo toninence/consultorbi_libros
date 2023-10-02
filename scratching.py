@@ -82,7 +82,7 @@ cursor.execute(f"CREATE DATABASE IF NOT EXISTS {nombre_base_datos}")
 # conexion = mysql.connector.connect(
 #     host='localhost',
 #     user='root',
-#     password='netmx2013',
+#     password='',
 #     database=nombre_base_datos
 # )
 # Crea un cursor para ejecutar consultas
@@ -117,7 +117,7 @@ consulta_insert_error = f"INSERT INTO {nombre_tabla_errores} (titulo, error, fec
 
 # # Inserta los datos en la tabla
 for libro in libros:
-    # libro['precio_pesos'] = str(libro['precio_pesos'])
+    libro['precio_pesos'] = str(libro['precio_pesos'])
     # print(libro)
     if not isinstance(libro['precio_pesos'], (int, float)) or not isinstance(libro['precio_usd'], (int, float)) or not isinstance(libro['precio_blue'], (int, float)):
       print("Error")
